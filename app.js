@@ -24,7 +24,8 @@ app.use(cors({ origin: true, credentials: true}))
 app.options("*", cors());
 
 //middle ware 
-// allows us to modify POST requests 
+// allows us to modify POST requests
+// give us extra info
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 

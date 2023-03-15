@@ -34,10 +34,6 @@ app.get('/', (req, res) => res.send("Hello World!"));
 
 // use books routes
 app.use('/api/books', books);
-
-app.use('/api/newroute')
-
-
 //sets the port defaults to 8000
 const port = process.env.PORT || 8000
 
